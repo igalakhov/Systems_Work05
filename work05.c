@@ -3,20 +3,34 @@
 
 // strlen - Tania
 int my_strlen(char *s){
-
-  return 0;
+  int index = 0;
+  int counter = 0;
+  while (s[index]) {
+    counter++;
+	index++;
+  }
+  return counter;
 }
 
 // strcpy - Tania
 char *my_strcpy(char *dest, char *source){
-
-  return NULL;
+  int index = 0;
+  while (source[index]) {
+	dest[index] = source[index];
+	index++;
+  }
+  dest[index+1] = 0;
+  return dest;
 }
 
 // strncpy - Tania
 char *my_strncpy(char *dest, char *source, int n){
-
-  return NULL;
+  int index = 0;
+  while (index < n) {
+	dest[index] = source[index];
+	index++;
+  }
+  return dest;
 }
 
 // strcat - Ivan
